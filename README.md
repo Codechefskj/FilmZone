@@ -57,7 +57,7 @@ I made FilmZone one step at a time. First I set up the navigation then I worked 
 - Expo Go app installed on your Android phone OR Android emulator set up
 
 **Step 1 — Clone the repository**
-git clone https://github.com/sambhavjha/FilmZone.git
+git clone https://github.com/Codechefskj/FilmZone.git
 
 **Step 2 — Go into the project folder**
 cd FilmZone

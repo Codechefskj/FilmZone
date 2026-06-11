@@ -92,7 +92,7 @@ export default function HomeScreen({ navigation }) {
         />
       </View>
 
-      <Text style={pageStyle.sectionHeading}>🏆 Top Rated Films</Text>
+      <Text style={pageStyle.sectionHeading}>Top Rated Films</Text>
       <FlatList
         data={topFilms}
         keyExtractor={(item) => item.id.toString()}

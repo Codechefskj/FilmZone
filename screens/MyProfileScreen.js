@@ -21,7 +21,7 @@ export default function MyProfileScreen() {
         <Text style={pageStyle.profileInfo}>Computer Science • 3rd Year</Text>
       </LinearGradient>
 
-      <Text style={pageStyle.sectionHead}>📊 My Statistics</Text>
+      <Text style={pageStyle.sectionHead}>My Statistics</Text>
       <View style={pageStyle.statRow}>
         <InfoBox boxLabel="Saved Films" boxValue={totalFavs} />
         <InfoBox boxLabel="Avg Rating" boxValue={avgFavRating} />

@@ -19,7 +19,7 @@ export default function MyFavScreen({ navigation }) {
 
   return (
     <View style={pageStyle.screen}>
-      <Text style={pageStyle.headingText}>❤️ My Favourites ({favList.length})</Text>
+      <Text style={pageStyle.headingText}>My Favourites ({favList.length})</Text>
       <FlatList
         data={favList}
         keyExtractor={item => item.id.toString()}

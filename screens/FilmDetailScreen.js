@@ -94,7 +94,7 @@ export default function FilmDetailScreen({ route }) {
           activeOpacity={0.8}
         >
           <Text style={pageStyle.favBtnText}>
-            {isInFav ? "❤️  Remove from Favourites" : "🤍  Add to Favourites"}
+            {isInFav ? "Remove from Favourites" : "Add to Favourites"}
           </Text>
         </TouchableOpacity>
       </View>

@@ -1,6 +1,8 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity, StyleSheet } from "react-native";
 import { IMG_BASE } from "../data/tmdbApi";
+import { GENRE_MAP } from '../data/tmdbApi'
+
 
 export default function FilmCard({ filmInfo, onCardPress }) {
   const posterUrl = filmInfo.poster_path
@@ -15,7 +17,10 @@ export default function FilmCard({ filmInfo, onCardPress }) {
     ? filmInfo.vote_average.toFixed(1)
     : "N/A";
 
-  const genre = filmInfo.genre || "Unknown";
+  const genre = filmInfo.genre ||
+  (filmInfo.genre_ids && filmInfo.genre_ids[0]
+    ? GENRE_MAP[filmInfo.genre_ids[0]]
+    : 'Unknown')
 
   return (
     <TouchableOpacity
